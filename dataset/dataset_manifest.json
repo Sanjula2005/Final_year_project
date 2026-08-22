@@ -1,0 +1,34 @@
+{
+  "project": "Voice2Venture",
+  "created": "2026-08-22",
+  "random_seed": 20260822,
+  "source_real_data": [
+    {
+      "name": "World Bank Informal Sector Enterprise Surveys - India 2022 custom query",
+      "file_used": "source_world_bank_aggregate_data.xlsx",
+      "role": "Calibration of synthetic business-profile probabilities and city-level characteristics",
+      "url": "https://www.enterprisesurveys.org/en/data"
+    },
+    {
+      "name": "World Bank Microdata Catalog - India Enterprise Survey of Micro Firms 2022",
+      "role": "Primary microdata source if/when access is approved; not required to run the generated package",
+      "url": "https://microdata.worldbank.org/catalog/6495"
+    },
+    {
+      "name": "World Bank Enterprise Surveys - India 2022",
+      "role": "Supplementary real-world validation and future enrichment",
+      "url": "https://www.enterprisesurveys.org/en/data/exploreeconomies/2022/india"
+    }
+  ],
+  "files": {
+    "master_business_context.csv": 998,
+    "recommendation_actions.csv": 10,
+    "context_action_mapping.csv": 10,
+    "bandit_interactions.csv": 79840,
+    "train_business_context.csv": 798,
+    "test_business_context.csv": 200,
+    "train_bandit_interactions.csv": 63840,
+    "test_bandit_interactions.csv": 16000
+  },
+  "important_note": "The generated business profiles and interaction logs are synthetic/simulated. They are calibrated to real World Bank 2022 aggregate indicator distributions from the supplied source file and must be described transparently as such."
+}
