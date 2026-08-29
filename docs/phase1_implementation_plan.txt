@@ -1,0 +1,96 @@
+MEMBER 1 — Data Validation and Cleaning
+	Responsible for:
+	Step 1
+		Unzip and organize datasets
+		Read CSV files
+		Understand every column
+	Step 2
+		Check missing values
+		Check duplicates
+		Check data types
+		Validate binary columns
+		Validate ranges
+		Check train/test consistency
+	Step 3
+		Clean if required
+		Save:
+		train_business_context_cleaned.csv
+		test_business_context_cleaned.csv
+	Deliverables
+		01_data_validation.ipynb
+		cleaning_report.md
+		train_business_context_cleaned.csv
+		test_business_context_cleaned.csv
+MEMBER 2 — Feature Engineering and Preprocessing
+	Responsible for:
+		Select contextual features
+	Create:
+		profit margin
+		revenue per employee
+		Apply log transformation
+		Encode city and sector
+		Normalize numerical variables
+		Create final context vectors
+	Deliverables
+	02_feature_engineering.ipynb
+	preprocessing_pipeline.pkl
+	train_context_vectors.csv
+	test_context_vectors.csv
+MEMBER 3 — Recommendation Actions and Bandit Data Preparation
+
+	This person should work on:
+
+		recommendation_actions.csv
+		context_action_mapping.csv
+		train_bandit_interactions.csv
+		test_bandit_interactions.csv
+	Tasks
+		Understand all 10 actions.
+	Map:
+	Context → Action → Reward
+	Validate reward values.
+	Check:
+		acceptance rate
+		average reward per action
+		average ROI per action
+		outcome per action
+Prepare the interaction sequence for LinUCB.
+
+Example:
+
+bandit_df.groupby("action_id")["reward"].agg(
+    ["mean", "min", "max", "count"]
+)
+Deliverables
+	03_bandit_data_analysis.ipynb
+	action_statistics.csv
+	prepared_bandit_interactions.csv
+
+
+
+
+
+                     RAW DATASET
+                          |
+                          v
+                 MEMBER 1
+            Data Validation/Cleaning
+                          |
+                          v
+                  CLEAN DATASET
+                    /         \
+                   /           \
+                  v             v
+            MEMBER 2        MEMBER 3
+        Feature Engineering  Bandit Data Analysis
+             & Scaling          & Actions
+                  \             /
+                   \           /
+                    v         v
+                    CONTEXT + ACTION + REWARD
+                              |
+                              v
+                        LINUCB MODEL
+                              |
+                              v
+                       FINAL RECOMMENDATION
