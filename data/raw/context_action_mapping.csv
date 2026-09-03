@@ -1,0 +1,11 @@
+context_rule,action_id,priority,rationale
+digital_adoption_score < 0.5,A01,High,Low observed technology adoption
+customer_reach_constraint == 1,A02,High,Low digital/customer-reach capability
+finance_constraint == 1,A03,High,Weak access to formal finance
+sells_on_credit == 1 or buys_on_credit == 1,A04,Medium,Credit exposure
+management_score_proxy < 40,A05,High,Low management-practice score
+pl_statement == 0,A06,High,No regular profit/loss tracking
+electricity == 0 or non_fixed_premises == 1,A07,Medium,Infrastructure/operating constraint
+profit_last_month == 0,A08,Medium,Low profitability outcome
+customer_reach_constraint == 1,A09,High,Customer-reach constraint
+profit_last_month == 1 and management_score_proxy >= 40,A10,Medium,Profitable and operationally stable

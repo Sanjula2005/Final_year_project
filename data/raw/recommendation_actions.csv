@@ -1,0 +1,11 @@
+action_id,recommendation,category,evidence_based_trigger
+A01,Adopt digital payments,Digital,Low digital adoption and no mobile-money use
+A02,Improve online and customer reach,Digital/Marketing,Low customer reach or low digital adoption
+A03,Explore appropriate business finance,Finance,Finance constraint or no bank account
+A04,Improve cash-flow and credit management,Finance,Credit buying/selling and low financial resilience
+A05,Strengthen management practices,Management,Low management score or no profit/loss tracking
+A06,Prepare regular profit and loss records,Management,No regular financial records
+A07,Improve business infrastructure,Infrastructure,No electricity or weak operating setup
+A08,Diversify products or services,Growth,Low profitability or growth opportunity
+A09,Expand customer reach through targeted marketing,Growth/Marketing,Customer reach constraint
+A10,Reinvest profits for controlled business growth,Growth,Profitable business with stable operations
