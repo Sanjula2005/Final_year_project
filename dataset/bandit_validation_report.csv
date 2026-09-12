@@ -1,0 +1,14 @@
+check,result
+Train missing cells,0.0
+Test missing cells,0.0
+Train duplicate rows,0.0
+Test duplicate rows,0.0
+Train duplicate interaction IDs,0.0
+Test duplicate interaction IDs,0.0
+Invalid train action IDs,0.0
+Invalid test action IDs,0.0
+Train reward minimum,0.09
+Train reward maximum,1.0
+Test reward minimum,0.09
+Test reward maximum,1.0
+Duplicate business-action-round combinations,0.0
