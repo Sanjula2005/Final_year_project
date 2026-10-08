@@ -1,0 +1,10 @@
+metric,value
+alpha,1.0
+number_of_actions,10.0
+number_of_context_features,38.0
+training_decisions,6384.0
+test_decisions,1600.0
+average_reward,0.859536875
+cumulative_reward,1375.259
+average_regret,0.11381624999999998
+cumulative_regret,182.10599999999997
